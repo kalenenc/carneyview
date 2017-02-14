@@ -1,0 +1,83 @@
+$background: #E1E5EE;
+$userInfo: #767B91;
+$subInfo: #D3D3D3;
+$darkText: #2A324B;
+$lightText: #767B91;
+$h2Color: #fff6a3;
+
+
+
+*, *:before, *:after {
+	padding:  0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Arimo', sans-serif;
+	background: $background;
+	font-weight: bold;
+}
+
+
+.existingDiv {
+  background: white;
+  //border: 3px solid red;
+  border-radius: 10px;
+  width: 60%;
+  margin: 20px auto;
+  padding: 50px;
+  h1 {
+  	font-size: 3.5em;
+  	padding: 20px;
+  	text-align: center;
+  	font-family: 'Calligraffitti', cursive;
+  }
+  .average {
+  	background: $darkText;
+  	color: white;
+  	width: 50%;
+  	padding: 20px;
+  	margin: 0 auto 50px auto;
+  	text-align: center;
+  	letter-spacing: 0.5px;
+  	word-wrap: break-word;
+  	line-height: 1.2em;
+  }
+  .userInfo {
+    background: $userInfo;
+    color: white;
+    padding: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+   
+    h2 {
+    	text-align: center;
+    	padding: 20px;
+    	color: $h2Color;
+    }
+
+  }
+  .subInfo {
+    background: $subInfo;
+    padding: 20px;
+    color: $darkText;
+  }
+}
+
+.newDiv {
+	margin-bottom: 50px;
+	word-wrap: break-word;
+}
+
+@media only screen and (max-width: 970px) {
+	.existingDiv {
+		width: 95%;
+		padding: 20px;
+	}
+
+	.newDiv {
+		width: 100%;
+
+	}
+}

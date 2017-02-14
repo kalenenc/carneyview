@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subscription View</title>
+	<link rel="stylesheet" type="text/css" href="styles/output.css">
+	<link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Calligraffitti" rel="stylesheet">
+</head>
+<body>
+
+	<main>
+
+		<div class="existingDiv">
+			<h1>Member Service</h1>
+			<div class="average">Average Subscription Price: 
+				<span class="averagePrice"></span>
+			</div>
+		</div>
+	</main>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script> 
+
+<script id="entry-template" type="text/x-handlebars-template">
+  
+  {{#each .}}
+  <div class="newDiv">
+      <div class="userInfo">
+        <h2>{{name}}</h2>
+        <h3>Phone: {{phone}}</h3>
+        <h3>Email: {{email}}</h3>
+      </div>
+      <div class="subInfo">
+        <h3>Subscription: <span>{{subscription.name}}</span></h3>
+        <h3>Price: <span>${{subscription.price}}</span></h3>
+      </div>
+    </div>
+    {{/each}}
+
+</script>
+
+<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>

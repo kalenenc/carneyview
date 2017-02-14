@@ -1,0 +1,59 @@
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Arimo', sans-serif;
+  background: #E1E5EE;
+  font-weight: bold; }
+
+.existingDiv {
+  background: white;
+  border-radius: 10px;
+  width: 60%;
+  margin: 20px auto;
+  padding: 50px; }
+  .existingDiv h1 {
+    font-size: 3.5em;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Calligraffitti', cursive; }
+  .existingDiv .average {
+    background: #2A324B;
+    color: white;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    letter-spacing: 0.5px;
+    word-wrap: break-word;
+    line-height: 1.2em; }
+  .existingDiv .userInfo {
+    background: #767B91;
+    color: white;
+    padding: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1.5em; }
+    .existingDiv .userInfo h2 {
+      text-align: center;
+      padding: 20px;
+      color: #fff6a3; }
+  .existingDiv .subInfo {
+    background: #D3D3D3;
+    padding: 20px;
+    color: #2A324B; }
+
+.newDiv {
+  margin-bottom: 50px;
+  word-wrap: break-word; }
+
+@media only screen and (max-width: 970px) {
+  .existingDiv {
+    width: 95%;
+    padding: 20px; }
+
+  .newDiv {
+    width: 100%; } }
+
+/*# sourceMappingURL=output.css.map */
